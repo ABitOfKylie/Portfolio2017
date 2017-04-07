@@ -1,0 +1,3321 @@
+@charset "utf-8";
+/* CSS Document */
+/* Curious Agency, Freelancer and Personal Portfolio Template*/
+
+/* Curious Freelancer and Personal Portfolio Template */
+/* Stylesheet codes included for pages */
+/* index-freelancer3col.html */
+/* index-freelancer4col.html */
+/* about-freelancer.html */
+/* service-freelancer.html */
+/* casestudy-freelancer3col.html */
+/* contact-freelancer3col.html */
+/* All codes rights reserved by Curious Agency, Freelancer and Personal Portfolio Template */ 
+/********************************************************************************* Header ****************************************************************************************/
+body{
+	margin:20px;
+	padding:0px;
+	background:rgba(2,2,95,1);
+	font-family: 'Lora', serif;
+
+}
+::selection{
+	background:rgba(2,2,95,1);
+
+	color:#fff;
+}
+
+#cloud{
+	width:88%;
+	height:300px;
+	margin:auto;
+	overflow:auto;
+	display:block;
+
+}
+.logo{
+	height:300px;
+	overflow:auto;
+	font-family: Lora serif;
+	border:purple 2px;
+	padding-top:20px;
+}
+#header{
+	width:100%;
+	height:80px;
+	margin:auto;
+	background:rgba(250,250,250,1);
+	overflow:hidden;
+}
+/* Logo */
+#header > .logo{
+	width:23%;
+	height:auto;
+	float:left;
+	overflow:hidden;
+	margin:-28px -60px;
+	border-radius:20px;
+}
+#header > .logo > a{
+	text-decoration:none;
+}
+#header > .logo > a > img{
+	width:100%;
+	min-height:100%;
+}
+/* Menu */
+#header > .menu{
+	width:44%;
+	height:80px;
+	float:right;
+}
+#header > .menu > ul{
+	width:100%;
+	height:100%;
+	padding:0px;
+	margin:0px;
+}
+#header > .menu > ul > li{
+	display:inline-block;
+	list-style-type:none;
+	vertical-align:middle;
+	padding:35px 20px;
+}
+#header > .menu > ul > li > a{
+	text-decoration:none;
+	font-family: 'Lora', serif;
+	color:rgba(2,2,95,0.8);
+	font-size:16px;
+	text-transform: uppercase;
+}
+#header > .menu > ul > li > ul{
+	width:auto;
+	height:auto;
+	padding:8px 12px 8px 8px;
+	margin:18px -10px;
+	position:absolute;
+	visibility:hidden;
+	background:rgba(240,240,240,0.9);
+}
+#header > .menu > ul > li:hover > ul{
+	visibility:visible;
+}
+#header > .menu > ul > li > ul > li{
+	display:block;
+	list-style-type:none;
+	vertical-align:middle;
+	padding:6px 0px;
+	margin-left:6px;
+} 
+#header > .menu > ul > li > ul > li > a{
+	text-decoration:none;
+	font-family: 'Varela Round', sans-serif;
+	color:rgba(1,1,1,0.7);
+	font-size:16px;
+	text-transform: uppercase;
+}
+#header > .menu > ul > li > ul > li > a:hover{
+	color:rgba(247,23,53,0.7);
+}
+#header > .menu > ul > li > a::before{
+	content:'';
+	position:absolute;
+	width:0px;
+	height:2px;
+	background:rgba(1,1,1,0.2);
+	z-index:9;
+	margin-left:1px;
+	top:76px;
+	transition:width 0.4s ease;
+}
+#header > .menu > ul > li:nth-child(1) > a:hover::before{
+	width:50px;
+}
+#header > .menu > ul > li:nth-child(2) > a:hover::before{
+	width:55px;
+}
+#header > .menu > ul > li:nth-child(3) > a:hover::before{
+	width:78px;
+}
+#header > .menu > ul > li:nth-child(4) > a:hover::before{
+	width:76px;
+}
+#header > .menu > ul > li:nth-child(5) > a{
+	border-bottom:2px solid rgba(1,1,1,0.2);
+	color:rgba(1,1,1,0.8);
+}
+/********************************************************************************* Header ****************************************************************************************/
+
+/***************************************************************************** MobileMenu ****************************************************************************************/
+#mobileheader{
+	width:100%;
+	height:60px;
+	margin:auto;
+	overflow:hidden;
+	background:rgba(255,255,255,1);
+	display:none;
+	position:relative;
+}
+/* Logo */
+#mobileheader > .logo{
+	float:left;
+	width:80%;
+	height:60px;
+	overflow:hidden;
+}
+#mobileheader > .logo > a{
+	text-decoration:none;
+}
+#mobileheader > .logo > a > img{
+	width:100%;
+	min-height:100%;
+	margin:-23px -60px;
+}
+/* Burger Menu Lines */
+#mobileheader > .burgermenu{
+	width:17%;
+	height:50px;
+	float:right;
+	padding:10px 0px 0px 0px;
+	box-sizing:border-box;
+}
+#mobileheader > .burgermenu > span{
+	display:block;
+	width:30px;
+	height:1px;
+	border:1px solid rgba(1,1,1,0.4);
+	margin:8px auto;
+	background:rgba(1,1,1,0.6);
+}
+/* Mobile Menu */
+#mobilemenu{
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	z-index:9;
+	top:0px;
+	left:0px;
+	background:rgba(1,1,1,0.93);
+	overflow-x:hidden;
+	overflow-y:scroll;
+	display:none;
+}
+/* Cross cancel sign on mobile menu*/
+#mobilemenu > .cross{
+	width:100%;
+	height:40px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+#mobilemenu > .cross > .fa{
+	font-size:38px;
+	float:right;
+	padding:2px 10px 0px 10px;
+	color:rgba(247,23,53,0.9);
+}
+#mobilemenu > ul{
+	width:100%;
+	height:auto;
+	margin:auto;
+	padding:0px;
+	margin:0px;
+}
+#mobilemenu > ul > li{
+	display: block;
+	list-style-type:none;
+	vertical-align:middle;
+	padding:15px 0px;
+	text-align:center;
+}
+#mobilemenu > ul > li > a{
+	text-decoration:none;
+	font-family: 'Varela Round', sans-serif;
+	color:rgba(255,255,255,1);
+	font-size:24px;
+	text-transform: uppercase;
+}
+/***************************************************************************** MobileMenu ****************************************************************************************/
+
+/********************************************************************************* Footer ****************************************************************************************/
+#footer{
+	width:100%;
+	height:80px;
+	background:rgba(250,250,250,1);
+}
+#footer > .connect{
+	width:50%;
+	height:80px;
+	float:left;
+}
+#footer > .connect > a{
+	text-decoration:none;
+}
+#footer > .connect > a > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(28,29,33,1);
+	margin:0px;
+	font-size:20px;
+	padding:30px 0px 0px 20px;
+}
+/* Social Icons */
+#footer > .socialicons{
+	width:50%;
+	height:80px;
+	float:left;
+}
+#footer > .socialicons > ul{
+	width:55%;
+	height:80px;
+	padding:0px;
+	margin:0px;
+	float:right;
+}
+#footer > .socialicons > ul > li{
+	display:inline-block;
+	list-style-type:none;
+	padding:30px 0px 0px 40px;
+}
+#footer > .socialicons > ul > li > a{
+	text-decoration:none;
+	font-size:22px;
+	color:rgba(28,29,33,1);
+	transition:color 0.4s ease-out;
+}
+#footer > .socialicons > ul > li > a:hover{
+	color:rgba(247,23,53,1);
+}
+/********************************************************************************* Footer ****************************************************************************************/
+
+/***************************************************** Index-freelancer3col and Index-freelancer4col Intro box *******************************************************************/
+#indexabout{
+	width:100%;
+	height:780px;
+	background:rgba(250,250,250,1);
+}
+#indexabout > .aboutintro{
+	width:88%;
+	height:490px;
+	margin:auto;
+	padding-top:120px;
+	overflow:hidden;
+}
+#indexabout > .aboutintro > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:86px;
+	color:rgba(28,29,33,1);
+	margin:0px;
+	text-transform:uppercase;
+	opacity:0.1;
+	transition:opacity 0.6s ease-out 0.2s;
+}
+#indexabout > .aboutintro > h2{
+	font-family: 'Lora serif';
+	color:rgba(28,29,33,0.85);
+	margin:0px;
+	font-size:54px;
+	padding-top:5px;
+	opacity:0.1;
+	transition:opacity 0.6s ease-out 0.4s;
+}
+#indexabout > .aboutintro > h2:nth-child(2){
+	margin-bottom:-20px;
+}
+#indexabout > .aboutintro > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(28,29,33,0.75);
+	margin:0px 0px 0px 3px;
+	font-size:24px;
+	padding-top:5px;
+	opacity:0.1;
+	transition:opacity 0.6s ease 0.6s;
+}
+#indexabout > .aboutintro > h2 > .bg{
+	color:rgba(227,23,53,0.9);
+}
+#indexabout > .aboutlinks{
+	width:88%;
+	height:150px;
+	margin:auto;
+}
+#indexabout > .aboutlinks > .mrabt{
+	width:150px;
+	height:50px;
+	float:left;
+	border: 3px solid rgba(28,29,33,1);
+	transition:background 0.6s ease;
+	margin-left:3px;
+	transition:background 0.6s ease;
+}
+#indexabout > .aboutlinks > .mrabt > a{
+	text-decoration:none;
+}
+#indexabout > .aboutlinks > .mrabt > a > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:26px;
+	color:rgba(28,29,33,1);
+	margin:0px;
+	text-align:center;
+	padding-top:8px;
+	box-sizing:border-box;
+	transition:color 0.6s ease;
+}
+#indexabout > .aboutlinks > .mrabt:hover{
+	background:#111;
+}
+#indexabout > .aboutlinks > .mrabt:hover > a > h1{
+	color:#fff;
+}
+#indexabout > .aboutlinks > .getintouch{
+	width:155px;
+	height:56px;
+	float:left;
+	margin-left:20px;
+	background:rgba(1,1,1,1);
+	transition:background 0.6s ease;
+}
+#indexabout > .aboutlinks > .getintouch > a{
+	text-decoration:none;
+}
+#indexabout > .aboutlinks > .getintouch > a > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:26px;
+	color:rgba(255,255,255,1);
+	margin:0px;
+	text-align:center;
+	padding-top:12px;
+	box-sizing:border-box;
+	transition:color 0.6s ease;
+}
+#indexabout > .aboutlinks > .getintouch:hover{
+	background:rgba(60,60,60,1);
+}
+#indexabout > .aboutlinks > .getintouch:hover > a > h1{
+	color:#fff;
+}
+/***************************************************** Index-freelancer3col and Index-freelancer4col Intro box *******************************************************************/
+
+/************************************************* Index-freelancer3col and Index-freelancer4col portfolio container and filter menu *********************************************/
+#portfolio{
+	width:100%;
+	height:auto;
+	background:rgba(246,246,246,1);
+	border-bottom:1px solid rgba(1,1,1,0.06);
+	padding-bottom:60px;
+}
+#portfolio > .portcontent{
+	width:88%;
+	height:230px;
+	margin:auto;
+}
+#portfolio > .portcontent > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:42px;
+	color:rgba(227,23,53,0.9);
+	margin:0px;
+	padding-top:25px;
+	padding-bottom:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .portcontent > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:22px;
+	padding-top:5px;
+	padding-bottom:20px;
+	opacity:0;
+	transition:opacity 0.6s ease 1s;
+}
+/* Portfolio Filter Menu */
+#portfolio > .portmenu{
+	width:88%;
+	height:80px;
+	margin:20px auto 40px auto;
+}
+#portfolio > .portmenu > ul{
+	width:64%;
+	height:100%;
+	padding:0px;
+	margin:auto;
+	font-weight:900;
+}
+#portfolio > .portmenu > ul > li{
+	display:inline-block;
+	list-style-type:none;
+	vertical-align:middle;
+	padding:35px 20px;
+}
+#portfolio > .portmenu > ul > li.act{
+	width:auto;
+	height:auto;
+	padding:5px 20px;
+	background:rgba(1,1,1,1);
+	color:rgba(255,255,255,1);
+}
+#portfolio > .portmenu > ul > li.act > a{
+	color:#FFFFFF;
+}
+#portfolio > .portmenu > ul > li > a{
+	text-decoration:none;
+	font-family: 'Varela Round', sans-serif;
+	color:rgba(0,0,0,0.8);
+	font-size:18px;
+	text-transform: uppercase;
+	cursor:pointer;
+}
+/************************************************* Index-freelancer3col and Index-freelancer4col portfolio container and filter menu *********************************************/
+
+/***************************************************************************** Index-freelancer3col ******************************************************************************/
+#portfolio > .foliobox3col{
+	width:93%;
+	height:auto;
+	margin:auto auto 90px auto;
+	overflow:hidden;
+}
+/* Folio1 */
+#portfolio > .foliobox3col > .folio1{
+	width:31.6%;
+	height:350px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease;
+	box-sizing:border-box;
+}
+#portfolio > .foliobox3col > .folio1 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio1:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox3col > .folio1:hover > a > .folio1cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox3col > .folio1 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox3col > .folio1 > a > .folio1cnt{
+	width:100%;
+	height:350px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox3col > .folio1 > a > .folio1cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:52px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:120px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio1 > a > .folio1cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:32px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio1 > a > .folio1cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox3col > .folio1 > a > .folio1cnt:hover > p{
+	opacity:1;
+}
+/* Folio2 */
+#portfolio > .foliobox3col > .folio2{
+	width:31.6%;
+	height:350px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#110011;
+	transform:scale(0);
+	transition:transform 0.6s ease;
+	box-sizing:border-box;
+}
+#portfolio > .foliobox3col > .folio2 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio2:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox3col > .folio2:hover > a > .folio2cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox3col > .folio2 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox3col > .folio2 > a > .folio2cnt{
+	width:100%;
+	height:350px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox3col > .folio2 > a > .folio2cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:52px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:120px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio2 > a > .folio2cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:32px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio2 > a > .folio2cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox3col > .folio2 > a > .folio2cnt:hover > p{
+	opacity:1;
+}
+/* Folio3 */
+#portfolio > .foliobox3col > .folio3{
+	width:31.6%;
+	height:350px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#000099;
+	transform:scale(0);
+	transition:transform 0.6s ease;
+}
+#portfolio > .foliobox3col > .folio3 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio3:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox3col > .folio3:hover > a > .folio3cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox3col > .folio3 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox3col > .folio3 > a > .folio3cnt{
+	width:100%;
+	height:350px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox3col > .folio3 > a > .folio3cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:52px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:120px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio3 > a > .folio3cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:32px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio3 > a > .folio3cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox3col > .folio3 > a > .folio3cnt:hover > p{
+	opacity:1;
+}
+/* Folio4 */
+#portfolio > .foliobox3col > .folio4{
+	width:31.6%;
+	height:350px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 1s;
+	box-sizing:border-box;
+}
+#portfolio > .foliobox3col > .folio4 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio4:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox3col > .folio4:hover > a > .folio4cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox3col > .folio4 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox3col > .folio4 > a > .folio4cnt{
+	width:100%;
+	height:350px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox3col > .folio4 > a > .folio4cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:52px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:120px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio4 > a > .folio4cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:32px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio4 > a > .folio4cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox3col > .folio4 > a > .folio4cnt:hover > p{
+	opacity:1;
+}
+/* Folio5 */
+#portfolio > .foliobox3col > .folio5{
+	width:31.6%;
+	height:350px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 1s;
+}
+#portfolio > .foliobox3col > .folio5 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio5:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox3col > .folio5:hover > a > .folio5cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox3col > .folio5 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox3col > .folio5 > a > .folio5cnt{
+	width:100%;
+	height:350px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox3col > .folio5 > a > .folio5cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:52px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:120px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio5 > a > .folio5cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:32px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio5 > a > .folio5cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox3col > .folio5 > a > .folio5cnt:hover > p{
+	opacity:1;
+}
+/* Folio6 */
+#portfolio > .foliobox3col > .folio6{
+	width:31.6%;
+	height:350px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 1s;
+}
+#portfolio > .foliobox3col > .folio6 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio6:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox3col > .folio6:hover > a > .folio6cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox3col > .folio6 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox3col > .folio6 > a > .folio6cnt{
+	width:100%;
+	height:350px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox3col > .folio6 > a > .folio6cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:52px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:120px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio6 > a > .folio6cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:32px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio6 > a > .folio6cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox3col > .folio6 > a > .folio6cnt:hover > p{
+	opacity:1;
+}
+/* Folio7 */
+#portfolio > .foliobox3col > .folio7{
+	width:31.6%;
+	height:350px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 2s;
+}
+#portfolio > .foliobox3col > .folio7 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio7:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox3col > .folio7:hover > a > .folio7cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox3col > .folio7 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox3col > .folio7 > a > .folio7cnt{
+	width:100%;
+	height:350px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox3col > .folio7 > a > .folio7cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:52px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:120px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio7 > a > .folio7cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:32px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio7 > a > .folio7cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox3col > .folio7 > a > .folio7cnt:hover > p{
+	opacity:1;
+}
+/* Folio8 */
+#portfolio > .foliobox3col > .folio8{
+	width:31.6%;
+	height:350px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 2s;
+}
+#portfolio > .foliobox3col > .folio8 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio8:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox3col > .folio8:hover > a > .folio8cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox3col > .folio8 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox3col > .folio8 > a > .folio8cnt{
+	width:100%;
+	height:350px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox3col > .folio8 > a > .folio8cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:52px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:120px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio8 > a > .folio8cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:32px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio8 > a > .folio8cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox3col > .folio8 > a > .folio8cnt:hover > p{
+	opacity:1;
+}
+/* Folio9 */
+#portfolio > .foliobox3col > .folio9{
+	width:31.6%;
+	height:350px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 2s;
+}
+#portfolio > .foliobox3col > .folio9 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio9:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox3col > .folio9:hover > a > .folio9cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox3col > .folio9 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox3col > .folio9 > a > .folio9cnt{
+	width:100%;
+	height:350px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox3col > .folio9 > a > .folio9cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:52px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:120px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio9 > a > .folio9cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:32px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox3col > .folio9 > a > .folio9cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox3col > .folio9 > a > .folio9cnt:hover > p{
+	opacity:1;
+}
+#portfolio > .ldmr{
+	width:145px;
+	height:50px;
+	margin:auto;
+	cursor:pointer;
+	border:3px solid rgba(0,0,0,1);
+	border-radius:40px;
+	box-shadow:1px 5px 5px 1px rgba(0,0,0,0.2);
+	transition:0.6s ease-out;
+}
+#portfolio > .ldmr:hover{
+	box-shadow:0px 0px 0px 0px rgba(0,0,0,0.2);
+}
+#portfolio > .ldmr > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:23px;
+	color:rgba(0,0,0,0.9);
+	margin:0px;
+	text-align:center;
+	padding-top:10px;
+}
+/***************************************************************************** Index-freelancer3col ******************************************************************************/
+
+/*************************************************************************** Index-freelancer4col ********************************************************************************/
+#portfolio > .foliobox4col{
+	width:93%;
+	height:auto;
+	margin:auto auto 90px auto;
+	overflow:hidden;
+}
+/* Folio1 */
+#portfolio > .foliobox4col > .folio1{
+	width:23.3%;
+	height:300px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease;
+	box-sizing:border-box;
+}
+#portfolio > .foliobox4col > .folio1 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio1:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox4col > .folio1:hover > a > .folio1cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox4col > .folio1 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox4col > .folio1 > a > .folio1cnt{
+	width:100%;
+	height:300px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox4col > .folio1 > a > .folio1cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:46px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:100px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio1 > a > .folio1cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:30px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio1 > a > .folio1cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox4col > .folio1 > a > .folio1cnt:hover > p{
+	opacity:1;
+}
+/* Folio2 */
+#portfolio > .foliobox4col > .folio2{
+	width:23.3%;
+	height:300px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#110011;
+	transform:scale(0);
+	transition:transform 0.6s ease;
+	box-sizing:border-box;
+}
+#portfolio > .foliobox4col > .folio2 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio2:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox4col > .folio2:hover > a > .folio2cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox4col > .folio2 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox4col > .folio2 > a > .folio2cnt{
+	width:100%;
+	height:300px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox4col > .folio2 > a > .folio2cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:46px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:100px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio2 > a > .folio2cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:30px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio2 > a > .folio2cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox4col > .folio2 > a > .folio2cnt:hover > p{
+	opacity:1;
+}
+/* Folio3 */
+#portfolio > .foliobox4col > .folio3{
+	width:23.3%;
+	height:300px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#000099;
+	transform:scale(0);
+	transition:transform 0.6s ease;
+}
+#portfolio > .foliobox4col > .folio3 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio3:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox4col > .folio3:hover > a > .folio3cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox4col > .folio3 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox4col > .folio3 > a > .folio3cnt{
+	width:100%;
+	height:300px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox4col > .folio3 > a > .folio3cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:46px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:100px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio3 > a > .folio3cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:30px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio3 > a > .folio3cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox4col > .folio3 > a > .folio3cnt:hover > p{
+	opacity:1;
+}
+/* Folio4 */
+#portfolio > .foliobox4col > .folio4{
+	width:23.3%;
+	height:300px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease;
+	box-sizing:border-box;
+}
+#portfolio > .foliobox4col > .folio4 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio4:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox4col > .folio4:hover > a > .folio4cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox4col > .folio4 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox4col > .folio4 > a > .folio4cnt{
+	width:100%;
+	height:300px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox4col > .folio4 > a > .folio4cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:46px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:100px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio4 > a > .folio4cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:30px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio4 > a > .folio4cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox4col > .folio4 > a > .folio4cnt:hover > p{
+	opacity:1;
+}
+/* Folio5 */
+#portfolio > .foliobox4col > .folio5{
+	width:23.3%;
+	height:300px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 1s;
+}
+#portfolio > .foliobox4col > .folio5 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio5:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox4col > .folio5:hover > a > .folio5cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox4col > .folio5 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox4col > .folio5 > a > .folio5cnt{
+	width:100%;
+	height:300px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox4col > .folio5 > a > .folio5cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:46px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:100px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio5 > a > .folio5cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:30px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio5 > a > .folio5cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox4col > .folio5 > a > .folio5cnt:hover > p{
+	opacity:1;
+}
+/* Folio6 */
+#portfolio > .foliobox4col > .folio6{
+	width:23.3%;
+	height:300px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 1s;
+}
+#portfolio > .foliobox4col > .folio6 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio6:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox4col > .folio6:hover > a > .folio6cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox4col > .folio6 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox4col > .folio6 > a > .folio6cnt{
+	width:100%;
+	height:300px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox4col > .folio6 > a > .folio6cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:46px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:100px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio6 > a > .folio6cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:30px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio6 > a > .folio6cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox4col > .folio6 > a > .folio6cnt:hover > p{
+	opacity:1;
+}
+/* Folio7 */
+#portfolio > .foliobox4col > .folio7{
+	width:23.3%;
+	height:300px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 1s;
+}
+#portfolio > .foliobox4col > .folio7 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio7:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox4col > .folio7:hover > a > .folio7cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox4col > .folio7 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox4col > .folio7 > a > .folio7cnt{
+	width:100%;
+	height:300px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox4col > .folio7 > a > .folio7cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:46px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:100px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio7 > a > .folio7cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:30px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio7 > a > .folio7cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox4col > .folio7 > a > .folio7cnt:hover > p{
+	opacity:1;
+}
+/* Folio8 */
+#portfolio > .foliobox4col > .folio8{
+	width:23.3%;
+	height:300px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 1s;
+}
+#portfolio > .foliobox4col > .folio8 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio8:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox4col > .folio8:hover > a > .folio8cnt{	
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox4col > .folio8 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox4col > .folio8 > a > .folio8cnt{
+	width:100%;
+	height:300px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox4col > .folio8 > a > .folio8cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:46px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:100px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio8 > a > .folio8cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:30px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio8 > a > .folio8cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox4col > .folio8 > a > .folio8cnt:hover > p{
+	opacity:1;
+}
+/* Folio9 */
+#portfolio > .foliobox4col > .folio9{
+	width:23.3%;
+	height:300px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 2s;
+}
+#portfolio > .foliobox4col > .folio9 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio9:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox4col > .folio9:hover > a > .folio9cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox4col > .folio9 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox4col > .folio9 > a > .folio9cnt{
+	width:100%;
+	height:300px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox4col > .folio9 > a > .folio9cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:46px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:100px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio9 > a > .folio9cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:30px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio9 > a > .folio9cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox4col > .folio9 > a > .folio9cnt:hover > p{
+	opacity:1;
+}
+/* Folio10 */
+#portfolio > .foliobox4col > .folio10{
+	width:23.3%;
+	height:300px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 2s;
+}
+#portfolio > .foliobox4col > .folio10 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio10:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox4col > .folio10:hover > a > .folio10cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox4col > .folio10 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox4col > .folio10 > a > .folio10cnt{
+	width:100%;
+	height:300px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox4col > .folio10 > a > .folio10cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:46px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:100px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio10 > a > .folio10cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:30px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio10 > a > .folio10cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox4col > .folio10 > a > .folio10cnt:hover > p{
+	opacity:1;
+}
+/* Folio11 */
+#portfolio > .foliobox4col > .folio11{
+	width:23.3%;
+	height:300px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 2s;
+}
+#portfolio > .foliobox4col > .folio11 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio11:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox4col > .folio11:hover > a > .folio11cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox4col > .folio11 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox4col > .folio11 > a > .folio11cnt{
+	width:100%;
+	height:300px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox4col > .folio11 > a > .folio11cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:46px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:100px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio11 > a > .folio11cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:30px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio11 > a > .folio11cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox4col > .folio11 > a > .folio11cnt:hover > p{
+	opacity:1;
+}
+/* Folio12 */
+#portfolio > .foliobox4col > .folio12{
+	width:23.3%;
+	height:300px;
+	float:left;
+	margin:10px;
+	position: relative;
+	overflow:hidden;
+	background:#00CC99;
+	transform:scale(0);
+	transition:transform 0.6s ease 2s;
+}
+#portfolio > .foliobox4col > .folio12 > img{
+	width:100%;
+	min-height:100%;
+	transform:scale(1);
+	transition:transform 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio12:hover > img{
+	transform:scale(1.1);
+}
+#portfolio > .foliobox4col > .folio12:hover > a > .folio12cnt{
+	background:rgba(240,240,240,0.8);
+}
+#portfolio > .foliobox4col > .folio12 > a{
+	text-decoration:none;
+}
+#portfolio > .foliobox4col > .folio12 > a > .folio12cnt{
+	width:100%;
+	height:300px;
+	position:absolute;
+	z-index:1;
+	background:rgba(255,255,255,0);
+	box-sizing:border-box;
+	transition:background 1s ease;
+}
+#portfolio > .foliobox4col > .folio12 > a > .folio12cnt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:46px;
+	color:rgba(1,1,1,0.9);
+	margin:0px;
+	padding-top:100px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio12 > a > .folio12cnt > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(1,1,1,0.8);
+	margin:0px;
+	font-size:30px;
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#portfolio > .foliobox4col > .folio12 > a > .folio12cnt:hover > h1{
+	opacity:1;
+}
+#portfolio > .foliobox4col > .folio12 > a > .folio12cnt:hover > p{
+	opacity:1;
+}
+/************************************************************************** Index-freelancer4col *********************************************************************************/
+
+/************************************************************************ Casestudy-freelancer ***********************************************************************************/
+#casestudy{
+	width:100%;
+	height:1750px;
+	background:rgba(250,250,250,1);
+}
+#casestudy > .casestudyintro{
+	width:88%;
+	height:380px;
+	margin:auto;
+	padding-top:120px;
+}
+#casestudy > .casestudyintro > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:62px;
+	color:rgba(28,29,33,1);
+	margin:0px;
+	text-transform:uppercase;
+	opacity:0;
+	transition:opacity 0.6s ease-out 0.2s; 
+}
+#casestudy > .casestudyintro > h2{
+	font-family: 'Reem Kufi', sans-serif;
+	margin:0px;
+	font-size:42px;
+	padding-top:5px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 0.4s; 
+}
+#casestudy > .casestudyintro > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:22px;
+	padding-top:5px;
+	opacity:0;
+	transition:opacity 0.6s ease 0.6s; 
+}
+#casestudy > .casestudyintro > h2 > .bg{
+	color:rgba(227,23,53,0.9);
+}
+/* Challange */
+#casestudy > .challange{
+	width:88%;
+	height:400px;
+	margin:40px auto;
+	background:rgba(248,248,248,1);
+}
+#casestudy > .challange > .projimage{
+	width:70%;
+	height:400px;
+	float:left;
+}
+/* Challange project img1 */
+#casestudy > .challange > .projimage > .img1{
+	width:48%;
+	height:400px;
+	float:left;
+	overflow:hidden;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#casestudy > .challange > .projimage > .img1 > img{
+	width:100%;
+	min-height:100%;
+}
+/* Challange project img2 */
+#casestudy > .challange > .projimage > .img2{
+	width:48%;
+	height:400px;
+	float:left;
+	margin-left:2%;
+	overflow:hidden;
+	opacity:0;
+	transition:opacity 0.6s ease-out 0.6s;
+}
+#casestudy > .challange > .projimage > .img2 > img{
+	width:100%;
+	min-height:100%;
+}
+/* Details */
+#casestudy > .challange > .detail{
+	width:28%;
+	height:400px;
+	float:left;
+	box-sizing:border-box;
+	opacity:0;
+	transition:opacity 0.6s ease-out 2s;
+}
+#casestudy > .challange > .detail > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:38px;
+	color:rgba(227,23,53,0.9);
+	margin:0px;
+	text-transform:uppercase;
+	padding-top:50px;
+}
+#casestudy > .challange > .detail > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:20px;
+	padding-top:10px;
+}
+/* Achieved */
+#casestudy > .achieved{
+	width:88%;
+	height:400px;
+	margin:40px auto;
+	background:rgba(248,248,248,1);
+}
+#casestudy > .achieved > .projimage{
+	width:70%;
+	height:400px;
+	float:left;
+}
+/* Achieved Project img1 */
+#casestudy > .achieved > .projimage > .img1{
+	width:48%;
+	height:400px;
+	float:left;
+	overflow:hidden;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#casestudy > .achieved > .projimage > .img1 > img{
+	width:100%;
+	min-height:100%;
+}
+/* Achieved  project img2*/
+#casestudy > .achieved > .projimage > .img2{
+	width:48%;
+	height:400px;
+	float:left;
+	margin-left:2%;
+	overflow:hidden;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1s;
+}
+#casestudy > .achieved > .projimage > .img2 > img{
+	width:100%;
+	min-height:100%;
+}
+/* Result */
+#casestudy > .achieved > .result{
+	width:28%;
+	height:400px;
+	float:left;
+	box-sizing:border-box;
+	opacity:0;
+	transition:opacity 0.6s ease-out 2s;
+}
+#casestudy > .achieved > .result > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:38px;
+	color:rgba(227,23,53,0.9);
+	margin:0px;
+	text-transform:uppercase;
+	padding-top:50px;
+}
+#casestudy > .achieved > .result > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:20px;
+	padding-top:10px;
+}
+/* Project Date and other details when it started */
+#casestudy > .projdt{
+	width:88%;
+	height:280px;
+	margin:20px auto;
+}
+#casestudy > .projdt > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:38px;
+	color:rgba(227,23,53,0.9);
+	margin:0px;
+	text-transform:uppercase;
+}
+#casestudy > .projdt > .moredescrp{
+	width:70%;
+	height:280px;
+	float:left;
+}
+#casestudy > .projdt > .moredescrp > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:20px;
+	padding-top:10px;
+}
+#casestudy > .projdt > .detail{
+	width:30%;
+	height:280px;
+	float:left;
+	box-sizing:border-box;
+}
+#casestudy > .projdt > .detail > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:20px;
+	padding-top:10px;
+}
+#casestudy > .projdt > .detail > p:nth-child(5){
+	border:2px solid rgba(28,29,33,1);
+	width:90%;
+	padding:15px 10px 5px 10px;
+	font-size:22px;
+	transition:0.4s ease-out;
+}
+#casestudy > .projdt > .detail > p:nth-child(5) > a{
+	text-decoration:none;
+	color:rgba(1,1,1,0.8);
+	transition:0.4s ease-out;
+}
+#casestudy > .projdt > .detail > p:nth-child(5):hover{
+	background:#111;
+}
+#casestudy > .projdt > .detail > p:nth-child(5):hover > a{
+	color:#fff;
+}
+#casestudyport{
+	width:100%;
+	height:250px;
+	background:rgba(1,1,1,0.9);
+	box-sizing:border-box;
+}
+#casestudyport > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:42px;
+	color:rgba(255,255,255,1);
+	margin:0px;
+	text-align:center;
+}
+#casestudyport > h1:nth-child(1){
+	padding-top:60px;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#casestudyport > h1:nth-child(2){
+	padding-top:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1s;
+}
+#casestudyport > h1 > a{
+	text-decoration:none;
+}
+#casestudyport > h1 > a > .bg{
+	padding:1px 10px;
+	background:rgba(247,23,53,1);
+	color:#fff;
+	text-transform:capitalize;
+	transition:color 0.6s ease;
+}
+#casestudyport > h1 > a > .bg:hover{
+	color:#111;
+}
+/************************************************************************ Casestudy-freelancer ***********************************************************************************/
+
+/*************************************************************** About personal or freelancer - about-freelancer *****************************************************************/
+#about{
+	width:100%;
+	height:350px;
+	background:rgba(250,250,250,1);
+}
+#about > .aboutintro{
+	width:88%;
+	height:300px;
+	margin:auto;
+	padding-top:80px;
+	overflow:auto;
+}
+#about > .aboutintro2{
+	width:88%;
+	height:300px;
+	margin:auto;
+	padding-top:80px;
+	overflow:auto;
+}
+#about > .aboutintro > h1{
+	font-family: 'Reem-Kufi', serif;
+	font-size:72px;
+	color:rgba(28,29,33,1);
+	margin:0px;
+	text-transform:uppercase;
+	opacity:0.1;
+	transition:opacity 0.6s ease-out 0.2s;
+}
+#about > .aboutintro > h2{
+	font-family: 'Reem Kufi', sans-serif;
+	margin:0px;
+	font-size:42px;
+	padding-top:5px;
+	opacity:0.1;
+	transition:opacity 0.6s ease-out 0.4s;
+	text-transform: capitalize;
+}
+#about > .aboutintro > p{
+	font-family: 'Lora serif';
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:24px;
+	padding-top:5px;
+	opacity:0.1;
+	transition:opacity 0.6s ease 0.6s;
+}
+#about > .aboutintro2 > p{
+	font-family: 'Lora serif';
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:24px;
+	padding-top:5px;
+	opacity:0.1;
+	transition:opacity 0.6s ease 0.6s;
+}
+#about > .aboutintro > h2 > .bg{
+	color:rgba(10,43,78,0.9);
+}
+/*Your Image*/
+#about > .pics{
+	width:88%;
+	height:780px;
+	margin:auto;
+	border: black solid 3px;
+}
+#about > .pics > p{
+	font-family: 'Lora serif';
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:24px;
+	padding-top:5px;
+}
+#about > .pics > .pic1{
+	width:100%;
+	height:100%;
+	background:#111;
+	float:left;
+	overflow:auto;
+	margin-bottom:40px;
+	align-content:center;
+}
+#about > .pics > .pic1 > img{
+	width:100%;
+	min-height:300px;
+}
+
+
+/* Clients logo or company logos */
+#clients{
+	width:100%;
+	height:800px;
+	background:rgba(246,246,246,1);
+}
+#clients > .clientbox{
+	width:88%;
+	height:230px;
+	margin:auto;
+}
+#clients > .clientbox > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:42px;
+	color:rgba(227,23,53,0.9);
+	margin:0px;
+	padding-top:25px;
+	padding-bottom:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#clients > .clientbox > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:22px;
+	padding-top:5px;
+	padding-bottom:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1s;
+}
+/*Company Logo1*/
+#clients > .clientbox > .cl1{
+	width:23%;
+	height:200px;
+	float:left;
+	margin-bottom:20px;
+	margin-top:20px;
+	overflow:hidden;
+	background:rgba(1,1,1,0.04);
+	box-shadow:1px 1px 15px 5px rgba(1,1,1,0.02);
+	opacity:0;
+	transition:opacity 0.6s ease-out 1s;
+}
+#clients > .clientbox > .cl1 > img{
+	width:100%;
+	min-height:100%;
+}
+/*Company Logo2*/
+#clients > .clientbox > .cl2{
+	width:23%;
+	height:200px;
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+	margin-bottom:20px;
+	overflow:hidden;
+	background:rgba(1,1,1,0.04);
+	box-shadow:1px 1px 15px 5px rgba(1,1,1,0.02);
+	opacity:0;
+	transition:opacity 0.6s ease-out 1.3s;
+}
+#clients > .clientbox > .cl2 > img{
+	width:100%;
+	min-height:100%;
+}
+/*Company Logo3*/
+#clients > .clientbox > .cl3{
+	width:23%;
+	height:200px;
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+	margin-bottom:20px;
+	overflow:hidden;
+	background:rgba(1,1,1,0.04);
+	box-shadow:1px 1px 15px 5px rgba(1,1,1,0.02);
+	opacity:0;
+	transition:opacity 0.6s ease-out 1.6s;
+}
+#clients > .clientbox > .cl3 > img{
+	width:100%;
+	min-height:100%;
+}
+/*Company Logo4*/
+#clients > .clientbox > .cl4{
+	width:23%;
+	height:200px;
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+	margin-bottom:20px;
+	overflow:hidden;
+	background:rgba(1,1,1,0.04);
+	box-shadow:1px 1px 15px 5px rgba(1,1,1,0.02);
+	opacity:0;
+	transition:opacity 0.6s ease-out 2s;
+}
+#clients > .clientbox > .cl4 > img{
+	width:100%;
+	min-height:100%;
+}
+/*Company Logo5*/
+#clients > .clientbox > .cl5{
+	width:23%;
+	height:200px;
+	float:left;
+	overflow:hidden;
+	background:rgba(1,1,1,0.04);
+	box-shadow:1px 1px 15px 5px rgba(1,1,1,0.02);
+	opacity:0;
+	transition:opacity 0.6s ease-out 2.3s;
+}
+#clients > .clientbox > .cl5 > img{
+	width:100%;
+	min-height:100%;
+}
+/*Company Logo6*/
+#clients > .clientbox > .cl6{
+	width:23%;
+	height:200px;
+	float:left;
+	margin-left:20px;
+	overflow:hidden;
+	background:rgba(1,1,1,0.04);
+	box-shadow:1px 1px 15px 5px rgba(1,1,1,0.02);
+	opacity:0;
+	transition:opacity 0.6s ease-out 2.6s;
+}
+#clients > .clientbox > .cl6 > img{
+	width:100%;
+	min-height:100%;
+}
+/*Company Logo7*/
+#clients > .clientbox > .cl7{
+	width:23%;
+	height:200px;
+	float:left;
+	margin-left:20px;
+	overflow:hidden;
+	background:rgba(1,1,1,0.04);
+	box-shadow:1px 1px 15px 5px rgba(1,1,1,0.02);
+	opacity:0;
+	transition:opacity 0.6s ease-out 3s;
+}
+#clients > .clientbox > .cl7 > img{
+	width:100%;
+	min-height:100%;
+}
+/*Company Logo8*/
+#clients > .clientbox > .cl8{
+	width:23%;
+	height:200px;
+	float:left;
+	margin-left:20px;
+	overflow:hidden;
+	background:rgba(1,1,1,0.04);
+	box-shadow:1px 1px 15px 5px rgba(1,1,1,0.02);
+	opacity:0;
+	transition:opacity 0.6s ease-out 3.3s;
+}
+#clients > .clientbox > .cl8 > img{
+	width:100%;
+	min-height:100%;
+}
+#aboutcont{
+	width:100%;
+	height:300px;
+	background:rgba(1,1,1,0.9);
+	box-sizing:border-box;
+}
+#aboutcont > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:42px;
+	color:rgba(255,255,255,1);
+	margin:0px;
+	text-align:center;
+}
+#aboutcont > h1 > a{
+	text-decoration:none;
+}
+#aboutcont > h1:nth-child(1){
+	padding-top:60px;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#aboutcont > h1:nth-child(2){
+	padding-top:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1s;
+}
+#aboutcont > h1 > a > .bg{
+	padding:1px 10px;
+	background:rgba(247,23,53,1);
+	color:#fff;
+	text-transform:capitalize;
+	transition:color 0.6s ease;
+}
+#aboutcont > h1 > a > .bg:hover{
+	color:#111;
+}
+/****************************************************************** About personal or freelancer -  about-freelancer**************************************************************/
+
+/*************************************************************** Services personal or freelancer - service.html*******************************************************************/
+#service{
+	width:100%;
+	height:1050px;
+	background:rgba(250,250,250,1);
+}
+#service > .serviceintro{
+	width:88%;
+	height:300px;
+	margin:auto;
+	padding-top:80px;
+}
+#service > .serviceintro > h1{
+	font-family: 'Reem-Kufi', sans-serif;
+	font-size:62px;
+	color:rgba(2,2,95,1);
+	margin:0px;
+	text-transform:uppercase;
+	opacity:0;
+	transition:opacity 0.6s ease-out 0.2s; 
+}
+#service > .serviceintro > h2{
+	font-family: 'Reem Kufi', sans-serif;
+	margin:0px;
+	font-size:42px;
+	padding-top:5px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 0.4s; 
+}
+#service > .serviceintro > p{
+	font-family: 'Lora', serif;
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:24px;
+	padding-top:5px;
+	opacity:0;
+	transition:opacity 0.6s ease 0.6s; 
+}
+#service > .serviceintro > h2 > .bg{
+	color:rgba(227,23,53,0.9);
+}
+/*#about > */.servbox{
+	width:100%;
+	height:680px;
+	margin:auto;
+	background-color: rgba(250,250,250,1);
+}
+#service > .servbox{
+	width:88%;
+	height:680px;
+	margin:auto;
+}
+
+/*Service 1*/
+#service > .servbox > .ser1{
+	width:32%;
+	height:200px;
+	float:left;
+	margin-bottom:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+
+/*#about > .servbox >*/ .ser1{
+	width:32%;
+	height:520px;
+	float:left;
+	margin-bottom:20px;
+	margin-left:15px;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#service > .servbox > .ser1 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(247,53,23,0.9);
+	margin:10px 0px;
+}
+/*#about > .servbox >*/ .ser1 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(10,43,78,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser1 > h2{
+	font-family: 'Reem-Kufi', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+/*#about > .servbox >*/ .ser1 > h2{
+	font-family: 'Reem-Kufi', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(10,43,78,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser1 > p{
+	font-family: 'Lora', serif;
+	text-align:center;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 0px;
+	padding:10px;
+}
+/*#about >.servbox >*/ .ser1 > p{
+	font-family: 'Lora', serif;
+	text-align:justify;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 25px 10px 25px;
+	padding:10px;
+}
+/*Service 2*/
+#service > .servbox > .ser2{
+	width:32%;
+	height:300px;
+	float:left;
+	margin-left:10px;
+	margin-bottom:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 0.6s;
+}
+/*#about > .servbox >*/ .ser2{
+	width:32%;
+	height:520px;
+	float:left;
+	margin-left:10px;
+	margin-bottom:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 0.6s;
+}
+#service > .servbox > .ser2 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(2,2,95,0.9);
+	margin:10px 0px;
+}
+/*#about > .servbox >*/ .ser2 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(10,43,78,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser2 > h2{
+	font-family: 'Reem-Kufi', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+/*#about > .servbox >*/ .ser2 > h2{
+	font-family: 'Reem-Kufi', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(10,43,78,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser2 > p{
+	font-family: 'Lora', serif;
+	text-align:left;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 20px;
+	padding:10px;
+}
+/*#about > .servbox >*/ .ser2 > p{
+	font-family: 'Lora', serif;
+	text-align:justify;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 25px 10px 25px;
+	padding:10px;
+}
+/*Service 3*/
+#service > .servbox >  .ser3{
+	width:32%;
+	height:300px;
+	float:left;
+	margin-left:10px;
+	margin-bottom:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1s;
+}
+/*.servbox > */.ser3{
+	width:32%;
+	height:520px;
+	float:left;
+	margin-left:10px;
+	margin-bottom:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1s;
+}
+#service >  .ser3 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(247,53,23,0.9);
+	margin:10px 0px;
+}
+/*.servbox > */.ser3 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(10,43,78,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser3 > h2{
+	font-family: 'Reem-Kufi', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+/*.servbox > */.ser3 > h2{
+	font-family: 'Reem-Kufi', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(10,43,78,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser3 > p{
+	font-family: 'Lora', sans-serif;
+	text-align:justify;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 55px 10px 25px;
+	padding:10px;
+}
+/*.servbox > */.ser3 > p{
+	font-family: 'Lora', sans-serif;
+	text-align:left;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 20px;
+	padding:10px;
+}
+/*Service 4*/
+#service > .servbox > .ser4{
+	width:32%;
+	height:200px;
+	float:left;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1.2s;
+}
+#service > .servbox > .ser4 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(247,53,23,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser4 > h2{
+	font-family: 'Francois One', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+#service > .servbox > .ser4 > p{
+	font-family: 'Reem Kufi', sans-serif;
+	text-align:center;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 0px;
+	padding:10px;
+}
+/*Service 5*/
+#service > .servbox > .ser5{
+	width:32%;
+	height:200px;
+	float:left;
+	margin-left:10px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1.6s;
+}
+#service > .servbox > .ser5 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(247,53,23,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser5 > h2{
+	font-family: 'Francois One', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+#service > .servbox > .ser5 > p{
+	font-family: 'Reem Kufi', sans-serif;
+	text-align:center;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 0px;
+	padding:10px;
+}
+/*Service 6*/
+#service > .servbox > .ser6{
+	width:32%;
+	height:200px;
+	float:left;
+	margin-left:10px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 2s;
+}
+#service > .servbox > .ser6 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(247,53,23,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser6 > h2{
+	font-family: 'Francois One', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+#service > .servbox > .ser6 > p{
+	font-family: 'Reem Kufi', sans-serif;
+	text-align:center;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 0px;
+	padding:10px;
+}
+/*Service 7*/
+#service > .servbox > .ser7{
+	width:32%;
+	height:200px;
+	float:left;
+	margin-left:10px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 2s;
+}
+#service > .servbox > .ser7 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(247,53,23,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser7 > h2{
+	font-family: 'Francois One', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+#service > .servbox > .ser7 > p{
+	font-family: 'Reem Kufi', sans-serif;
+	text-align:center;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 0px;
+	padding:10px;
+}
+/*Service 8*/
+#service > .servbox > .ser8{
+	width:32%;
+	height:200px;
+	float:left;
+	margin-left:10px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 2s;
+}
+#service > .servbox > .ser8 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(247,53,23,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser8 > h2{
+	font-family: 'Francois One', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+#service > .servbox > .ser8 > p{
+	font-family: 'Reem Kufi', sans-serif;
+	text-align:center;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 0px;
+	padding:10px;
+}
+/*Service 9*/
+#service > .servbox > .ser9{
+	width:32%;
+	height:200px;
+	float:left;
+	margin-left:10px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 2s;
+}
+#service > .servbox > .ser9 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(247,53,23,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser9 > h2{
+	font-family: 'Francois One', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+#service > .servbox > .ser9 > p{
+	font-family: 'Reem Kufi', sans-serif;
+	text-align:center;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 0px;
+	padding:10px;
+}
+/*Service 10*/
+#service > .servbox > .ser10{
+	width:32%;
+	height:200px;
+	float:left;
+	margin-left:10px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 2s;
+}
+#service > .servbox > .ser10 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(247,53,23,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser10 > h2{
+	font-family: 'Francois One', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+#service > .servbox > .ser10 > p{
+	font-family: 'Reem Kufi', sans-serif;
+	text-align:center;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 0px;
+	padding:10px;
+}
+/*Service 11*/
+#service > .servbox > .ser11{
+	width:32%;
+	height:280px;
+	float:left;
+	margin-left:10px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 2s;
+}
+#service > .servbox > .ser11 > h1{
+	text-align:center;
+	font-size:62px;
+	color:rgba(247,53,23,0.9);
+	margin:10px 0px;
+}
+#service > .servbox > .ser11 > h2{
+	font-family: 'Francois One', sans-serif;
+	text-align:center;
+	font-size:26px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+#service > .servbox > .ser11 > p{
+	font-family: 'Reem Kufi', sans-serif;
+	text-align:center;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 0px;
+	padding:10px;
+}
+#testimonial{
+	width:100%;
+	height:700px;
+	background:rgba(246,246,246,1);
+}
+#testimonial > .testimonialbox{
+	width:88%;
+	height:640px;
+	margin:auto;
+}
+#testimonial > .testimonialbox > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:42px;
+	color:rgba(227,23,53,0.9);
+	margin:0px;
+	padding-top:25px;
+	padding-bottom:20px;
+}
+#testimonial > .testimonialbox > p{
+	font-family: 'Reem Kufi', sans-serif;
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:22px;
+	padding-top:5px;
+	padding-bottom:20px;
+}
+/*Testimonial 1*/
+#testimonial > .testimonialbox > .tbox1{
+	width:32%;
+	height:380px;
+	float:left;
+	margin-bottom:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1s;
+}
+#testimonial > .testimonialbox > .tbox1 > .timg1{
+	width:100px;
+	height:100px;
+	margin:auto;
+	border-radius:60px;
+	margin-top:20px;
+}
+#testimonial > .testimonialbox > .tbox1 > .timg1 > h1{
+	font-size:76px;
+	color:rgba(247,53,23,0.9);
+	text-align:center;
+	padding-top:5px;
+}
+#testimonial > .testimonialbox > .tbox1 > h2{
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size:24px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+#testimonial > .testimonialbox > .tbox1 > p{
+	font-family: 'Reem Kufi', sans-serif;
+	text-align:center;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 0px;
+	padding:0px 30px 10px 30px;
+}
+/*Testimonial 2*/
+#testimonial > .testimonialbox > .tbox2{
+	width:32%;
+	height:380px;
+	float:left;
+	margin-left:10px;
+	margin-bottom:10px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1.4s;
+}
+#testimonial > .testimonialbox > .tbox2 > .timg2{
+	width:100px;
+	height:100px;
+	margin:auto;
+	border-radius:60px;
+	margin-top:20px;
+}
+#testimonial > .testimonialbox > .tbox2 > .timg2 > h1{
+	font-size:76px;
+	color:rgba(247,53,23,0.9);
+	text-align:center;
+	padding-top:5px;
+}
+#testimonial > .testimonialbox > .tbox2 > h2{
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size:24px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+#testimonial > .testimonialbox > .tbox2 > p{
+	font-family: 'Reem Kufi', sans-serif;
+	text-align:center;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 0px;
+	padding:0px 30px 10px 30px;
+}
+/*Testimonial 3*/
+#testimonial > .testimonialbox > .tbox3{
+	width:32%;
+	height:380px;
+	float:left;
+	margin-left:20px;
+	margin-bottom:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1.8s;
+}
+#testimonial > .testimonialbox > .tbox3 > .timg3{
+	width:100px;
+	height:100px;
+	margin:auto;
+	border-radius:60px;
+	margin-top:20px;
+}
+#testimonial > .testimonialbox > .tbox3 > .timg3 > h1{
+	font-size:76px;
+	color:rgba(247,53,23,0.9);
+	text-align:center;
+	padding-top:5px;
+}
+#testimonial > .testimonialbox > .tbox3 > h2{
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size:24px;
+	color:rgba(28,29,33,1);
+	margin:10px 0px;
+}
+#testimonial > .testimonialbox > .tbox3 > p{
+	font-family: 'Reem Kufi', sans-serif;
+	text-align:center;
+	font-size:19px;
+	color:rgba(28,29,33,0.75);
+	margin:10px 0px;
+	padding:0px 30px 10px 30px;
+}
+#servicecont{
+	width:100%;
+	height:300px;
+	/*background:rgba(1,1,1,0.9);*/
+
+	box-sizing:border-box;
+}
+#servicecont > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:42px;
+	color:rgba(255,255,255,1);
+	margin:0px;
+	text-align:center;
+}
+#servicecont > h1:nth-child(1){
+	padding-top:60px;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#servicecont > h1:nth-child(2){
+	padding-top:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1s;
+}
+#servicecont > h1 > a{
+	text-decoration:none;
+}
+#servicecont > h1 > a > .bg{
+	padding:1px 10px;
+	background:rgba(247,23,53,1);
+	color:#fff;
+	text-transform:capitalize;
+	transition:color 0.6s ease;
+}
+#servicecont > h1 > a > .bg:hover{
+	color:#111;
+}
+/************************************************************* Services personal or freelancer - service.html ********************************************************************/
+
+/*********************************************************** Contact personal or freelancer - contact.html ***********************************************************************/
+#contact{
+	width:100%;
+	height:1550px;
+	background:rgba(250,250,250,1);
+}
+#contact > .contactintro{
+	width:88%;
+	height:300px;
+	margin:auto;
+	padding-top:65px;
+	}
+
+#contact > .contactintro > h1{
+	font-family: 'Reem-Kufi', serif;
+	font-size:42px;
+	color:rgba(2,2,95,1);
+	margin:0px;
+	text-transform:uppercase;
+	opacity:0;
+	transition:opacity 0.6s ease-out 0.2s; 
+}
+#contact > .contactintro > h2{
+	font-family: 'Reem-Kufi';
+	margin:0px;
+	font-size:42px;
+	padding-top:5px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 0.4s; 
+}
+#contact > .contactintro > p{
+	font-family: 'Lora', serif;
+	color:rgba(28,29,33,0.75);
+	margin:0px;
+	font-size:24px;
+	padding-top:5px;
+	opacity:0;
+	transition:opacity 0.6s ease 0.6s; 
+}
+#contact > .contactintro > h2 > .bg{
+	color:rgba(2,2,95,0.9);
+}
+/* Contact */
+#contact > .contactform{
+	width:88%;
+	height:1020px;
+	margin:auto;
+}
+#contact > .contactform > .location{
+	width:100%;
+	height:250px;
+	float:left;
+	overflow:hidden;
+	margin-bottom:100px;
+}
+/* Contact Address*/
+#contact > .contactform > .location > .address{
+	width:32%;
+	height:250px;
+	float:left;
+	box-sizing:border-box;
+	background:rgba(2,2,95,1);
+	/*background:rgba(1,1,1,1);*/
+	padding:40px 80px;
+	transform:scale(0);
+	transition:transform 0.4s ease-out;
+}
+#contact > .contactform > .location > .address > h1{
+	margin:0px;
+	text-align: center;
+	font-size:46px;
+	font-family:"Lora";
+	color:#fff;
+	opacity:0.02;
+	transition:opacity 1s ease-out 0.5s;
+}
+#contact > .contactform > .location > .address > h2{
+	font-family: 'Francois One', sans-serif;
+	font-size:26px;
+	color:rgba(255,255,255,1);
+	margin:10px 0px;
+	text-align:center;
+	opacity:0.02;
+	transition:opacity 1s ease-out 0.5s;
+}
+#contact > .contactform > .location > .address > p{
+	font-family: 'Reem Kufi', sans-serif;
+	font-size:19px;
+	color:rgba(255,255,255,0.9);
+	margin:0px;
+	text-align:center;
+	opacity:0.02;
+	transition:opacity 1s ease-out 0.5s;
+}
+/*Contact Email*/
+#contact > .contactform > .location > .email{
+	width:32%;
+	height:250px;
+	float:left;
+	box-sizing:border-box;
+	background:rgba(2,2,95,1.9);
+	margin-left:1%;
+	padding:40px 80px;
+	transform:scale(0);
+	transition:transform 0.4s ease-out 1s; 
+}
+#contact > .contactform > .location > .email > h1{
+	margin:0px;
+	text-align: center;
+	font-size:46px;
+	color:rgba(2,162,100,0.9);
+	opacity:0.02;
+	transition:opacity 1s ease-out 1.5s;
+}
+#contact > .contactform > .location > .email > h2{
+	font-family: 'Francois One', sans-serif;
+	font-size:26px;
+	color:rgba(255,255,255,1);
+	margin:10px 0px;
+	text-align:center;
+	opacity:0.02;
+	transition:opacity 1s ease-out 1.5s;
+}
+#contact > .contactform > .location > .email > p{
+	font-family: 'Reem Kufi', sans-serif;
+	font-size:19px;
+	color:rgba(255,255,255,0.9);
+	margin:0px;
+	text-align:center;
+	opacity:0.02;
+	transition:opacity 1s ease-out 1.5s;
+}
+/*Contact Phone*/
+#contact > .contactform > .location > .ph{
+	width:32%;
+	height:250px;
+	float:left;
+	box-sizing:border-box;
+	background:rgba(2,2,95,1);
+	margin-left:1%;
+	padding:40px 80px;
+	transform:scale(0);
+	transition:transform 0.4s ease-out 1.5s; 
+}
+#contact > .contactform > .location > .ph > h1{
+	margin:0px;
+	text-align: center;
+	font-size:46px;
+	color:rgba(22,131,187,1);
+	opacity:0.02;
+	transition:opacity 1s ease-out 2s;
+}
+#contact > .contactform > .location > .ph > h2{
+	font-family: 'Francois One', sans-serif;
+	font-size:26px;
+	color:rgba(255,255,255,1);
+	margin:10px 0px;
+	text-align:center;
+	opacity:0.02;
+	transition:opacity 1s ease-out 2s;
+}
+#contact > .contactform > .location > .ph > p{
+	font-family: 'Reem Kufi', sans-serif;
+	font-size:19px;
+	color:rgba(255,255,255,0.9);
+	margin:0px;
+	text-align:center;
+	opacity:0.02;
+	transition:opacity 1s ease-out 2s;
+}
+/*Contact Form*/
+#contact > .contactform > .form{
+	width:100%;
+	height:600px;
+	float:left;
+}
+#contact > .contactform > .form > form{
+	width:90%;
+	height:auto;
+	margin:auto;
+}
+::-webkit-input-placeholder{
+	color:rgba(48,63,159
+		,1);
+}
+::-moz-input-placeholder{
+	color:rgba(1,1,1,1);
+}
+::-ms-input-placeholder{
+	color:rgba(1,1,1,1);
+}
+::-o-input-placeholder{
+	color:rgba(1,1,1,1);
+}
+/*Contact Form - name*/
+#contact > .contactform > .form > form > .name{
+	width:100%;
+	height:60px;
+	float:left;
+	border:0px;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size:22px;
+	border:0px;
+	outline:none;
+	color:#111;
+	background:rgba(192,207,233,0.8);
+	margin-bottom:20px;
+	padding:10px 0px 0px 10px;
+	box-sizing:border-box;
+}
+/*Contact Form - email*/
+#contact > .contactform > .form > form > .email{
+	width:49%;
+	height:60px;
+	float:left;
+	border:0px;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size:22px;
+	border:0px;
+	color:#111;
+	background:rgba(192,207,233,0.8);
+	margin-bottom:20px;
+	padding:10px 0px 0px 10px;
+	box-sizing:border-box;
+}
+/*Contact Form - phone number*/
+#contact > .contactform > .form > form > .phnum{
+	width:50%;
+	height:60px;
+	float:left;
+	margin-left:1%;
+	border:0px;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size:22px;
+	border:0px;
+	color:#111;
+	background:rgba(192,207,233,0.8);
+	margin-bottom:20px;
+	padding:10px 0px 0px 10px;
+	box-sizing:border-box;
+}
+/*Contact Form - message*/
+#contact > .contactform > .form > form > .message{
+	width:98.5%;
+	height:260px;
+	float:left;
+	border:0px;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size:22px;
+	border:0px;
+	color:#111;
+	background:rgba(192,207,233,0.8);
+	margin-bottom:20px;
+	padding:10px 0px 0px 10px;
+}
+/*Contact Form - submit*/
+#contact > .contactform > .form > form > .submit{
+	width:98.5%;
+	height:60px;
+	float:left;
+	border:0px;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size:24px;
+	border:0px;
+	color:rgba(48,67,159,1);
+	background:rgba(192,207,233,0.8);
+	margin-bottom:20px;
+	padding:10px 0px 0px 10px;
+	cursor:pointer;
+	transition:background 0.6s ease;
+}
+#contact > .contactform > .form > form > .submit:hover{
+	background:rgba(48,63,159,0.9);
+}
+/*Contact Me - Location Map*/
+#map{
+	width:100%;
+	height:400px;
+	background:#111;
+	overflow:hidden;
+}
+#map > iframe{
+	width:100%;
+	height:100%;
+}
+#contactport{
+	width:100%;
+	height:250px;
+	background:rgba(1,1,1,0.9);
+	box-sizing:border-box;
+}
+#contactport > h1{
+	font-family: 'Francois One', sans-serif;
+	font-size:42px;
+	color:rgba(255,255,255,1);
+	margin:0px;
+	text-align:center;
+}
+#contactport > h1:nth-child(1){
+	padding-top:60px;
+	opacity:0;
+	transition:opacity 0.6s ease-out;
+}
+#contactport > h1:nth-child(2){
+	padding-top:20px;
+	opacity:0;
+	transition:opacity 0.6s ease-out 1s;
+}
+#contactport > h1 > a{
+	text-decoration: none;
+}
+#contactport > h1 > a > .bg{
+	padding:1px 10px;
+	background:rgba(247,23,53,1);
+	color:#fff;
+	text-transform:capitalize;
+	transition:color 0.6s ease;
+}
+#contactport > h1 > a > .bg:hover{
+	color:#111;
+}
+/****************************************************************** Contact personal or freelancer *******************************************************************************/

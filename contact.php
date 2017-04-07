@@ -1,6 +1,6 @@
 <?php 
-$emailTo = 'yourmail@example.com';
-$siteTitle = 'YourSiteTitle';
+$emailTo = 'kyliecalif@gmail.com';
+$siteTitle = 'Kylie Soderblom';
 
 error_reporting(E_ALL ^ E_NOTICE); // hide all basic notices from PHP
 
@@ -26,7 +26,7 @@ if(isset($_POST['submitted'])) {
 		$email = trim($_POST['email']);
 	}
 		
-	// we need at least some content
+	// need at least some content
 	if(trim($_POST['comments']) === '') {
 		$commentError = 'You forgot to enter a message!';
 		$hasError = true;
@@ -55,7 +55,7 @@ if(isset($_POST['submitted'])) {
 		
 		mail($email, $respondSubject, $respondBody, $respondHeaders);
 		
-        // set our boolean completion value to TRUE
+        // set boolean completion value to TRUE
 		$emailSent = true;
 	}
 }
